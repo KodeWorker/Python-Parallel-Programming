@@ -3,30 +3,11 @@
 # (**1**) Introduction
 
 ## (**1.1**) [The Parallel Computing Memory Architecture](1.1-TheParallelComputingMemoryArchitecture.md)
-## (**1.2**) Memory Organization
-
-### Memory Organization - An Introduction
-- Memory organization - The way in which the data is access
-- The main problem - Making the response time of the memory compatible with the speed of the processor
-- When the processor starts transferring data, the memory will remain occupied for the entire time of the **memory cycle**
-- Memory cycle time is defined as the time elapsed bewteen two successive operations
-- During data transferring, no device, I/O driver, processor or even processor itself may request the use of memory.
-Because the memory is commited to response to the original request.
-
-### The Memory Organization in MIMD Architecture
-
-    [ MIMD ]
-        ├───────────────────────────────────────────────┐
-    [ Distributed Memory ]                      [ Shared Memory ]
-        ├──────────────────┐                            ├──────────┬────────────┬──────────┐
-    [ MPP ]     [ Cluster of Workstation]           [ UMA ]     [ NUMA ]    [ NORMA ]   [ COMA ]
-
-### Shared Versus Distributed Memory
-- If a processor were to execute the instruction [load R0, i], which means load in the R0 register the contents of the memory location i, the question now is what should happen
-
-|Shared Memory|Distributed Memory|
-|:-|:-|
-|The **'i'** index is a global address and the memory location **'i'** is the same for each processor| i is a local address|
+## (**1.2**) [Memory Organization](1.2-MemoryOrganization.md)
+## (**1.3**) [Memory Organization (Continued)](1.3-MemoryOrganizationContinued.md)
+## (**1.4**) [Parallel Programming Models](1.4-ParallelProgrammingModels.md)
+## (**1.5**) [Designing a Parallel Program](1.5-DesigningAParallelProgram.md)
+## (**1.6**) Evaluating the Performance of a Parallel Program
 
 **(To be continue ... )**
 
